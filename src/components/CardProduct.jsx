@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 export default function CardProduct({ price, title, text, img }) {
   return (
     <div className="card">
@@ -11,7 +9,7 @@ export default function CardProduct({ price, title, text, img }) {
           <p className="card-price">$ {price}</p>
         </div>
 
-        <Button>Hola mundo</Button>
+        <button>Hola mundo</button>
       </div>
     </div>
   );
