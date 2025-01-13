@@ -1,0 +1,60 @@
+const products = [
+  {
+    id: 1,
+    title: "Gaseosa Coca-Cola 500ml",
+    price: 1.5,
+    stock: 50,
+    img: "https://example.com/images/coca-cola-500ml.jpg",
+    category: "Bebidas",
+  },
+  {
+    id: 2,
+    title: "Alfajor Triple Chocolate",
+    price: 0.8,
+    stock: 30,
+    img: "https://example.com/images/alfajor-triple.jpg",
+    category: "Snacks",
+  },
+  {
+    id: 3,
+    title: "Papas Lays Clásicas 140g",
+    price: 2.0,
+    stock: 20,
+    img: "https://example.com/images/papas-lays.jpg",
+    category: "Snacks",
+  },
+  {
+    id: 4,
+    title: "Agua Mineral 1L",
+    price: 1.2,
+    stock: 40,
+    img: "https://example.com/images/agua-mineral.jpg",
+    category: "Bebidas",
+  },
+  {
+    id: 5,
+    title: "Chicles de Menta",
+    price: 0.5,
+    stock: 100,
+    img: "https://example.com/images/chicles-menta.jpg",
+    category: "Confitería",
+  },
+  {
+    id: 6,
+    title: "Chocolate Milka Oreo 100g",
+    price: 1.8,
+    stock: 25,
+    img: "https://example.com/images/milka-oreo.jpg",
+    category: "Confitería",
+  },
+  {
+    id: 7,
+    title: "Galletitas Oreo 117g",
+    price: 1.2,
+    stock: 35,
+    img: "https://example.com/images/oreo-galletas.jpg",
+    category: "Snacks",
+  },
+];
+
+export default products;

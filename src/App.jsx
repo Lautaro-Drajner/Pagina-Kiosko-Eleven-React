@@ -1,38 +1,25 @@
 import "./App.css";
 import "bamboo.css";
-import NavBar from "./components/NavBar.jsx";
-import CardProduct from "./components/CardProduct.jsx";
-import FlexContainer from "./components/FlexContainer.jsx";
-import ItemListContainer from "./components/ItemListContainer.jsx";
+import products from "../data";
+import ItemCount from "./components/ItemCount";
+import CardProduct from "./components/CardProduct";
+import React from "react";
 
 function App() {
+  const list = products.map((prod) => (
+    <CardProduct
+      key={prod.id}
+      title={prod.title}
+      price={prod.price}
+      text={prod.category}
+      img={prod.img}
+    />
+  ));
+
   return (
     <>
-      <NavBar />
-
-      <ItemListContainer greetings={"Bienvenidos"} />
-      <section>
-        <FlexContainer>
-          <CardProduct
-            price={25.0}
-            title="Alfajor"
-            text="El mejor alfajor"
-            img="/images/rasta_blanco.jpg"
-          />
-          <CardProduct
-            price={25.0}
-            title="Gorra React"
-            text="El mejor alfajor"
-            img="/images/rasta_blanco.jpg"
-          />
-          <CardProduct
-            price={25.0}
-            title="Rasta Blanco"
-            text="El mejor alfajor"
-            img="/images/rasta_blanco.jpg"
-          />
-        </FlexContainer>
-      </section>
+      <section>{list}</section>
+      <section></section>
     </>
   );
 }
